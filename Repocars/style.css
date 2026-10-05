@@ -1,0 +1,309 @@
+body{
+	margin:0;
+	background-color: #000;
+	color: white;
+	position: relative;
+	background-image: url(car1.png);
+	background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+	align-items: center;
+	display: flex;
+	gap: 50px;
+	padding: 15px 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+nav{
+	display: flex;
+	gap: 30px;
+}
+nav a{
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500px;
+
+}
+h1{
+	text-align: center;
+}
+.font{
+	height: 100vh;
+}
+.font-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.font-button {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.font-content h1{
+	color: white;
+	font-size: 48px;
+	margin: 0;
+}
+.font-content p {
+    color: white;
+    font-size: 15px;
+    max-width: 600px;
+    margin: 25px auto 0;
+}
+footer {
+    margin-top: auto;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.logo img {
+    width: 150px;
+}
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.car-card {
+    width: 300px;
+    background-color: white;
+    padding: 15px;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.cars {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 140px 40px 60px;
+    justify-content: center;
+}
+.car-card h2,
+.car-card p {
+    color: black;
+}
+.product-media {
+    width: 100%;
+}
+
+.product-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.product-thumbnails img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.product-page {
+    background-color: white;
+    background-image: none;
+    color: #111;
+    margin: 0;
+}
+.product-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 30px;
+}
+.product-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+.product-image {
+    width: 100%;
+}
+.product-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+}
+.product-thumbnails img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.product-info {
+    padding-top: 20px;
+}
+.product-info h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 15px;
+    color: #111;
+}
+.product-info > p {
+    color: #555;
+    line-height: 1.6;
+}
+.product-info #product-price {
+    font-size: 26px;
+    font-weight: 600;
+    color: #111;
+    margin: 10px 0 25px;
+}
+.car-specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+.car-specs div {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 12px;
+}
+.car-specs span {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.car-specs strong {
+    font-size: 15px;
+    color: #111;
+}
+.product-thumbnails img {
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.product-thumbnails img:hover {
+    opacity: 0.7;
+}
+.product-header {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding: 20px 50px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+.product-header .logo img {
+    width: 150px;
+}
+.product-header nav {
+    display: flex;
+    gap: 30px;
+}
+.product-header nav a {
+    color: #111;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+#order-button {
+    margin-top: 35px;
+    padding: 15px 25px;
+    border: none;
+    background-color: #111;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.terms-content {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 150px 40px 80px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    box-sizing: border-box;
+}
+.terms-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0;
+}
+.terms-content p {
+    font-size: 14px;
+    margin: 0 0 18px;
+}
+.terms-content section {
+    margin-top: 45px;
+}
+.terms-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+.terms-content ul,
+.terms-content ol {
+    margin: 10px 0 20px;
+    padding-left: 25px;
+}
+.terms-content li {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.terms-content > p:last-child {
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px solid #ddd;
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+    .terms-content {
+        padding: 130px 20px 50px;
+    }
+    .terms-content h1 {
+        font-size: 32px;
+    }
+    .terms-content h2 {
+        font-size: 18px;
+    }
+    .terms-content p,
+    .terms-content li {
+        font-size: 13px;
+    }
+    .terms-content section {
+        margin-top: 35px;
+    }
+}
